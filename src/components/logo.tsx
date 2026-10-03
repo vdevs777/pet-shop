@@ -1,0 +1,18 @@
+import { DogIcon } from "lucide-react";
+import Link from "next/link";
+
+export function Logo() {
+  return (
+    <Link
+      href="/"
+      className="flex items-center gap-4 bg-[#2e2c30] w-fit p-3 rounded-b-lg"
+    >
+      <div className="size-8 bg-background-brand rounded flex items-center justify-center">
+        <DogIcon />
+      </div>
+      <span className="text-label-large-size font-bold text-content-brand">
+        MUNDO PET
+      </span>
+    </Link>
+  );
+}
